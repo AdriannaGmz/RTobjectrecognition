@@ -1,0 +1,35 @@
+How i made work the catkin dummy tutorial
+
+From http://wiki.ros.org/catkin  
+
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ source /opt/ros/kinetic/setup.bash
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ mkdir -p ws/src  && cd ws
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ catkin_make
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$  source devel/setup.bash
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ echo $ROS_PACKAGE_PATH /home/adrianna/Progr/ROS/ws/src:/opt/ros/kinetic/share/
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ cd src
+adrianna@AsusUbuntu16:~/Progr/ROS/ws/src$ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
+
+*here i added the hello.cpp code to the src folder and modified the CMakeList.txt, particularly in lines 137 where I added:
+	add_executable(${PROJECT_NAME}_node_hello src/hello.cpp)
+	## Specify libraries to link a library or executable target against
+	target_link_libraries(${PROJECT_NAME}_node_hello
+	  ${catkin_LIBRARIES}
+	)
+
+
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ cd ..
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ catkin_make
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ . devel/setup.bash 
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ roscore
+ 
+ - and in another shell -
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ . devel/setup.bash 
+adrianna@AsusUbuntu16:~/Progr/ROS/ws$ rosrun beginner_tutorials beginner_tutorials_node_hello
+
+
+and it worked...
+
+so I guess the magic is about the 
+	add_executable(${PROJECT_NAME}_node_hello src/hello.cpp)
+in the CMakeList.txt

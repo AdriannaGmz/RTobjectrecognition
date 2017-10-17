@@ -1,0 +1,2 @@
+cam_obj:find-object:libuvc_ros/libuvc_camera:libuvc_ros/libuvc_ros:vision_opencv/cv_bridge:vision_opencv/image_geometry:vision_opencv/opencv_tests:vision_opencv/vision_opencv
+-DCATKIN_DEVEL_PREFIX=/home/adrianna/Progr/ROS/ws/devel -DCMAKE_INSTALL_PREFIX=/home/adrianna/Progr/ROS/ws/install -G Unix Makefiles

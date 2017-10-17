@@ -1,0 +1,8 @@
+prefix=/home/adrianna/Progr/ROS/ws/install
+
+Name: find_object_2d
+Description: Description of find_object_2d
+Version: 0.6.1
+Cflags: -I/home/adrianna/Progr/ROS/ws/install/include
+Libs: -L/home/adrianna/Progr/ROS/ws/install/lib 
+Requires: cv_bridge roscpp rospy sensor_msgs std_msgs image_transport message_filters tf

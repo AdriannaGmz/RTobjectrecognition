@@ -1,0 +1,8 @@
+prefix=/home/adrianna/Progr/ROS/ws/devel
+
+Name: libuvc_camera
+Description: Description of libuvc_camera
+Version: 0.0.9
+Cflags: -I/home/adrianna/Progr/ROS/ws/devel/include
+Libs: -L/home/adrianna/Progr/ROS/ws/devel/lib -llibuvc_camera_nodelet
+Requires: roscpp camera_info_manager dynamic_reconfigure image_transport nodelet sensor_msgs

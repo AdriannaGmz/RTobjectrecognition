@@ -1,0 +1,8 @@
+prefix=/home/adrianna/Progr/ROS/ws/devel
+
+Name: cam_obj
+Description: Description of cam_obj
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/adrianna/Progr/ROS/ws/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/adrianna/Progr/ROS/ws/install
+
+Name: jpeg_streamer
+Description: Description of jpeg_streamer
+Version: 0.2.5
+Cflags: 
+Libs: -L/home/adrianna/Progr/ROS/ws/install/lib 
+Requires: 

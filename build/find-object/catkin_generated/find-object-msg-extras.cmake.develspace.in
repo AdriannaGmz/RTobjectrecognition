@@ -1,0 +1,2 @@
+set(find-object_MESSAGE_FILES "/home/adrianna/Progr/ROS/ws/src/find-object/msg/ObjectsStamped.msg;/home/adrianna/Progr/ROS/ws/src/find-object/msg/Point_id.msg;/home/adrianna/Progr/ROS/ws/src/find-object/msg/PointObjects.msg")
+set(find-object_SERVICE_FILES "")
