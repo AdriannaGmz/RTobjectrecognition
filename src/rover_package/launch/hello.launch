@@ -1,0 +1,10 @@
+<launch>	
+	<!-- Salutation node -->
+	<node
+		pkg="cam_obj"
+		type="cam_obj_node_hello"
+		name="hello_nd"
+		output="screen"
+	/>	
+	
+</launch>
